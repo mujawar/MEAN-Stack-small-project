@@ -2,7 +2,6 @@
  * Created by arif on 29/3/16.
  */
 
-
 var express = require('express'),
     app = express(),
     bodyParser = require('body-parser'),
@@ -19,9 +18,6 @@ app.get('/',function(req, res){//get,put,post,delete
 //rest api
 app.get('/api/meetups',meetupsController.list);
 app.post('/api/meetups',meetupsController.create);
-
-
-
 app.listen(3000,function(){
     console.log('i am listening........')
 })
